@@ -28,6 +28,41 @@
         </div>
       </nav>
     </header>
+    <main class="main-content">
+      <h1>Каталог товаров</h1>
+      <section class="product-cards">
+        <ul class="product-cards__list">
+          <li class="product-cards__item">
+            <img src="http://placehold.it/150x100" alt="" class="product-cards__product-image" width="260" height="195">
+            <h3 class="product-cards__product-title">Зайчик-попрыгайчик</h3>
+            <p class="product-cards__product-parametes">Рост 30 см, вес 200 г</p>
+            <a href="" class="product-cards__price">1 200 руб.</a>
+          </li>
+          <li class="product-cards__item">
+            <img src="http://placehold.it/150x100" alt="" class="product-cards__product-image" width="260" height="195">
+            <h3 class="product-cards__product-title">Корзинка для белья</h3>
+            <p class="product-cards__product-parametes">Диаметр 15 см, высота 10 см</p>
+            <a href="" class="product-cards__price">690 руб.</a>
+          </li>
+          <li class="product-cards__item">
+            <img src="http://placehold.it/150x100" alt="" class="product-cards__product-image" width="260" height="195">
+            <h3 class="product-cards__product-title">Большая корзинка для игрушек</h3>
+            <p class="product-cards__product-parametes">Диаметр 30 см, высота 30 см</p>
+            <a href="" class="product-cards__price">1 500 руб.</a>
+          </li>
+        </ul>
+      </section>
+      <section class="production-process">
+        <h3 class="production-process__title">Процесс производства</h3>
+        <video src="#" class="product-process__video" preload="metadata" width="260" height="150">
+          <source src="#" type="video/mp4">
+          <source src="#" type="video/ogg">
+          <source src="#" type="video/webm">
+        </video>
+        <p class="product-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a href="" class="button product-process__button">Сделать заказ</a>
+      </section>
+    </main>
     <footer class="main-footer">
       <section class="main-footer__social social">
         <ul class="social__list">
@@ -42,5 +77,15 @@
         <a class="main-footer__developers-link developer-htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">HTMLacademy</a>
       </section>
     </footer>
+    <section class="modal modal-cart">
+      <h3 class="modal-cart__title">Добавить в корзину</h3>
+      <p class="modal-cart__text">Выберите размер:</p>
+      <ul class="modal-cart__size-list size-list">
+        <li class="size-list__item">S</li>
+        <li class="size-list__item">M</li>
+        <li class="size-list__item">L</li>
+      </ul>
+      <a href="cart.html" class="modal-cart__button button button-green">Добавить</a>
+    </section>
   </body>
 </html>
