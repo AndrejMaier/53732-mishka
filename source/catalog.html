@@ -5,6 +5,42 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-    
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="http://placehold.it/150x100" width="86" height="35" alt="">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <form class="main-nav__search-form" action="https://echo.htmlacademy.ru" method="get">
+            <input class="main-nav__search-field" type="search" placeholder="Поиск по сайту">
+            <!-- Спросить по поводу надобности здесь кнопки -->
+          </form>
+          <a href="cart.html" class="main-nav__cart">Корзина: <span class="main-nav__amount-goods">пока пуста</span></a>
+        </div>
+      </nav>
+    </header>
+    <footer class="main-footer">
+      <section class="main-footer__social social">
+        <ul class="social__list">
+          <!-- Добавим иконки фоном -->
+          <li class="social__item"><a href="https://www.instagram.com" class="social__link social__link--instagram">Instagram</a></li>
+          <li class="social__item"><a href="https://www.facebook.com/" class="social__link social__link--facebook">Facebook</a></li>
+          <li class="social__item"><a href="https://www.twitter.com/" class="social__link social__link--twitter">Twitter</a></li>
+        </ul>
+      </section>
+      <section class="main-footer__developers">
+        <b class="main-footer__developers-title">Разработано</b>
+        <a class="main-footer__developers-link developer-htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">HTMLacademy</a>
+      </section>
+    </footer>
   </body>
 </html>
