@@ -64,28 +64,34 @@
       </section>
     </main>
     <footer class="main-footer">
-      <section class="main-footer__social social">
+      <section class="social">
         <ul class="social__list">
           <!-- Добавим иконки фоном -->
-          <li class="social__item"><a href="https://www.instagram.com" class="social__link social__link--instagram">Instagram</a></li>
-          <li class="social__item"><a href="https://www.facebook.com/" class="social__link social__link--facebook">Facebook</a></li>
-          <li class="social__item"><a href="https://www.twitter.com/" class="social__link social__link--twitter">Twitter</a></li>
+          <li class="social__item social__item--instagram"><a href="https://www.instagram.com">Instagram</a></li>
+          <li class="social__item social__item--facebook"><a href="https://www.facebook.com/">Facebook</a></li>
+          <li class="social__item social__item--twitter"><a href="https://www.twitter.com/">Twitter</a></li>
         </ul>
       </section>
-      <section class="main-footer__developers">
-        <b class="main-footer__developers-title">Разработано</b>
-        <a class="main-footer__developers-link developer-htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">HTMLacademy</a>
+      <section class="developers">
+        <b class="developers-title">Разработано</b>
+        <a class="developers__link developer__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">HTMLacademy</a>
       </section>
     </footer>
     <section class="modal modal-cart">
       <h3 class="modal-cart__title">Добавить в корзину</h3>
       <p class="modal-cart__text">Выберите размер:</p>
-      <ul class="modal-cart__size-list size-list">
-        <li class="size-list__item">S</li>
-        <li class="size-list__item">M</li>
-        <li class="size-list__item">L</li>
-      </ul>
-      <a href="cart.html" class="modal-cart__button button button-green">Добавить</a>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__item form__item--modal">
+          <legend>Уточнить размер размер</legend>
+          <input type="radio" name="size" value="S" id="size-s" checked>
+          <label for="size-s">S</label>
+          <input type="radio" name="size" value="M" id="size-m">
+          <label for="size-m">M</label>
+          <input type="radio" name="size" value="L" id="size-l">
+          <label for="size-l">L</label>
+        </fieldset>
+        <input class="button button--green" type="submit" value="Добавить">
+      </form>
     </section>
   </body>
 </html>
