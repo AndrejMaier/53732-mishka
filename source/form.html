@@ -63,8 +63,63 @@
           <label for="name-field-3">Отчество:</label>
           <input type="text" name="patronymic" id="name-field-3" placeholder="Отчество, если желаете">
         </fieldset>
+        <fieldset class="form__item">
+          <legend>Тел</legend>
+          <input type="tel" name="phone-number" placeholder="+7 XXX XX XX*">
+        </fieldset>
+        <fieldset class="form__item">
+          <input type="email" name="email-user" placeholder="Ваш Email*">
+        </fieldset>
+        <fieldset class="form__item">
+          <textarea name="description-product" cols="30" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </fieldset>
+        <p class="legend">
+          <sup>*</sup>Поля обязательны для заполнения
+        </p>
         <input class="button" type="submit" value="Отправить заказ">
       </form>
     </main>
+    <footer class="main-footer">
+      <section class="social">
+        <ul class="social__list">
+          <!-- Добавим иконки фоном -->
+          <li class="social__item social__item--instagram"><a href="https://www.instagram.com">Instagram</a></li>
+          <li class="social__item social__item--facebook"><a href="https://www.facebook.com/">Facebook</a></li>
+          <li class="social__item social__item--twitter"><a href="https://www.twitter.com/">Twitter</a></li>
+        </ul>
+      </section>
+      <section class="developers">
+        <b class="developers-title">Разработано</b>
+        <a class="developers__link developer__link--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">HTMLacademy</a>
+      </section>
+    </footer>
+    <section class="modal modal-cart">
+      <h3 class="modal-cart__title">Добавить в корзину</h3>
+      <p class="modal-cart__text">Выберите размер:</p>
+      <form class="form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__item form__item--modal">
+          <legend>Уточнить размер размер</legend>
+          <input type="radio" name="size" value="S" id="size-s" checked>
+          <label for="size-s">S</label>
+          <input type="radio" name="size" value="M" id="size-m">
+          <label for="size-m">M</label>
+          <input type="radio" name="size" value="L" id="size-l">
+          <label for="size-l">L</label>
+        </fieldset>
+        <input class="button button--green" type="submit" value="Добавить">
+      </form>
+<!--
+      <ul class="size-list">
+        <li class="size-list__item">S</li>
+        <li class="size-list__item">M</li>
+        <li class="size-list__item">L</li>
+      </ul>
+      <a href="cart.html" class="button button--green">Добавить</a>
+-->
+    </section>
   </body>
 </html>
+
+
+
+
