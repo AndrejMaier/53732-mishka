@@ -1,6 +1,16 @@
 .main-header {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  //временая обводка, ширина и высота
-  min-width: 320px;
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 2px solid #ececec;
+  }
 }
