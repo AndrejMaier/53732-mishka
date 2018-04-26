@@ -1,4 +1,5 @@
 .main-nav {
+  position: relative;
   padding: 0;
   margin: 0;
   width: 320px;
@@ -9,7 +10,7 @@
 .main-nav__toggle {
   position: absolute;
   right: 30px;
-  top: 29px;
+  top: -51px;
   font-size: 0;
   width: 21px;
   height: 21px;
@@ -75,19 +76,67 @@ input[type="search"] {
 
 @media (min-width: @tablet-width) {
   .main-nav {
+    position: absolute;
+    top: 89px;
+    z-index: 2;
     width: auto;
     &__toggle {
       display: none;
+    }
+    &__wrapper {
+      width: 768px;
     }
     &__list {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      padding-left: 49px;
+      padding-right: 50px;
+    }
+    &__search-field {
+        display: none;
     }
     &__item {
       padding-left: 0;
-      padding-right: 0;
+      padding-right: 36px;
+      padding-top: 17px;
+      padding-bottom: 17px;
       border-bottom: none;
+      font-size: 15px;
+      
+      &--search {
+        position: absolute;
+        top: -89px;
+        min-height: 24px;
+        right: 315px;
+        padding-left: 46px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        border-left: 1px solid #ececec;
+        background-position: 33px center;
+        font-size: 17px;
+        &:hover {
+          padding-left: 82px;
+        }
+      }
+      &--card {
+        position: absolute;
+        top: -89px;
+        right: 0;
+        width: 182px;
+        text-align: left;
+        padding-left: 82px;
+        padding-right: 50px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        border-left: 1px solid #ececec;
+        background-position: 31px center;
+        font-size: 17px;
+      }
+    }
+    &__item--search:hover .main-nav__search-field {
+      display: block;
+      width: 121px;
     }
   }
 }
