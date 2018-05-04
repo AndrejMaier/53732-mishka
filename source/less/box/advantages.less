@@ -52,3 +52,46 @@
     }
   }
 }
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 668px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    h2 {
+      width: 668px;
+      margin-top: 40px;
+      margin-bottom: 23px;
+      font-size: 43px;
+      line-height: 50px;
+    }
+    &__advantage-name {
+      width: 334px;
+      margin-top: 23px;
+      margin-bottom: 35px;
+      font-size: 20px;
+      line-height: 22px;
+      &--eco {
+        order: 1;
+      }
+      &--hands-made {
+        order: 2;
+      }
+      &--scandinavian-style {
+        order: 3;
+      }
+      &--made-in-russia {
+        order: 4;
+      }
+      &--your-rating {
+        order: 5;
+      }
+      &--delivery-in-pack {
+        order: 6;
+      }
+    }
+  }
+}
