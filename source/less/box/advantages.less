@@ -59,6 +59,7 @@
     flex-wrap: wrap;
     width: 668px;
     padding-top: 30px;
+    padding-bottom: 48px;
     padding-left: 50px;
     padding-right: 50px;
     h2 {
@@ -92,6 +93,23 @@
       &--delivery-in-pack {
         order: 6;
       }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    h2 {
+      font-size: 53px;
+      line-height: 57px;
+      margin-top: 52px;
+      letter-spacing: -0.5px;
+    }
+    &__advantage-name {
+      width: 350px;
     }
   }
 }
