@@ -1,5 +1,54 @@
 .advantages {
+  display: flex;
+  flex-direction: column;
   width: 260px;
   padding-left: 30px;
   padding-right: 30px;
+  padding-top: 15px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: bold;
+  color: #000000;
+  h2 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  &__advantage-name {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 54px;
+    font-size: 17px;
+    line-height: 20px;
+    &--eco {
+      background-image: url(../img/icon-feature-flower.svg);
+      background-repeat: no-repeat;
+      background-position: 8px 5px;
+    }
+    &--scandinavian-style {
+      background-image: url(../img/icon-feature-money.svg);
+      background-repeat: no-repeat;
+      background-position: 0 5px;
+    }
+    &--your-rating {
+      background-image: url(../img/icon-feature-heart.svg);
+      background-repeat: no-repeat;
+      background-position: 8px 5px;
+    }
+    &--hands-made {
+      background-image: url(../img/icon-feature-ball.svg);
+      background-repeat: no-repeat;
+      background-position: 4px 5px;
+    }
+    &--made-in-russia {
+      background-image: url(../img/icon-feature-rocket.svg);
+      background-repeat: no-repeat;
+      background-position: 0 4px;
+    }
+    &--delivery-in-pack {
+      background-image: url(../img/icon-feature-gift.svg);
+      background-repeat: no-repeat;
+      background-position: 3px 2px;
+    }
+  }
 }
