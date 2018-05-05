@@ -11,6 +11,7 @@
     font-size: 25px;
     font-weight: bold;
     line-height: 30px;
+    color: #000000;
   }
   &__list {
     width: 260px;
@@ -74,5 +75,55 @@
   }
   &__button-write {
     margin-top: 37px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    width: 668px;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 42px;
+    margin-bottom: 67px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    background-image: url(../img/review@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    h2 {
+      width: 450px;
+      order: 1;
+      font-size: 43px;
+      line-height: 50px;
+    }
+    &__list {
+      order: 3;
+      width: 668px;
+    }
+    &__text {
+      font-size: 17px;
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+    &__toggle-list {
+      order: 4;
+      position: absolute;
+      bottom: 60px;
+      right: 50px;
+      width: 174px;
+    }
+    &__toggle {
+      border: 0;
+      width: 87px;
+    }
+    &__button-write {
+      order: 2;
+      width: 171px;
+      margin-top: 0;
+    }
   }
 }
