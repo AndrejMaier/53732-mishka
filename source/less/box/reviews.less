@@ -38,12 +38,14 @@
     font-style: normal;
     margin-top: 30px;
     margin-bottom: 2px;
+    color: #000000;
   }
   &__social-link {
     color: #000000;
     text-decoration: none;
     font-size: 17px;
     line-height: 30px;
+    color: #444444;
   }
   &__toggle-list {
     width: 260px;
@@ -124,6 +126,35 @@
       order: 2;
       width: 171px;
       margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    width: 877px;
+    padding-left: 173px;
+    padding-right: 0;
+    padding-top: 28px; 
+    margin-left: auto;
+    margin-right: auto;
+    h2 {
+      font-size: 53px;
+      line-height: 57px;
+      margin-bottom: 32px;
+    }
+    &__list {
+      width: 780px;
+      padding-right: 97px;
+    }
+    &__text {
+      margin-bottom: 10px;
+    }
+    &__toggle-list {
+      right: 0;
+    }
+    &__button-write {
+      margin-top: 22px;
     }
   }
 }
