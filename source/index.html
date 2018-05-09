@@ -137,21 +137,22 @@
         </section>
       </div>
     </footer>
-    <section class="modal modal-cart">
-      <h3 class="modal-cart__title">Добавить в корзину</h3>
-      <p class="modal-cart__text">Выберите размер:</p>
-      <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__item form__item--modal">
-          <legend>Уточнить размер размер</legend>
-          <input type="radio" name="size" value="S" id="size-s" checked>
-          <label for="size-s">S</label>
-          <input type="radio" name="size" value="M" id="size-m">
-          <label for="size-m">M</label>
-          <input type="radio" name="size" value="L" id="size-l">
-          <label for="size-l">L</label>
-        </fieldset>
-        <input class="button button--green" type="submit" value="Добавить">
-      </form>
+    <section class="modal modal--active">
+      <section class="modal__cart">
+        <h3 class="modal__title">Добавить в корзину</h3>
+        <p class="modal__text">Выберите размер:</p>
+        <form class="form form--modal" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__item form__item--modal">
+            <input type="radio" name="size" value="S" id="size-s" checked>
+            <label class="form__size" for="size-s">S</label>
+            <input type="radio" name="size" value="M" id="size-m">
+            <label class="form__size" for="size-m">M</label>
+            <input type="radio" name="size" value="L" id="size-l">
+            <label class="form__size" for="size-l">L</label>
+          </fieldset>
+          <input class="button button--modal button--green" type="submit" value="Добавить">
+        </form>
+      </section>
     </section>
   </body>
 </html>
