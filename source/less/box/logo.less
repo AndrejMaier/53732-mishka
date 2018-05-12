@@ -3,6 +3,9 @@
   padding: 22px 30px 16px;
   text-align: center;
   border-bottom: 1px solid #ececec;
+  &--footer {
+    display: none;
+  }
 }
 
 .logo__image {
@@ -18,9 +21,22 @@
     padding-right: 0;
     padding-left: 50px;
     text-align: left;
-    &__image {
-      width: 113px;
-      height: 46px;
+    &--footer {
+      display: block;
+      width: 103px;
+      height: 36px;
+      border-bottom: 0;
+      padding-left: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  .logo__image {
+    width: 113px;
+    height: 46px;
+    &--footer {
+      width: 103px;
+      height: 36px;
     }
   }
 }
@@ -38,9 +54,20 @@
     padding-right: 0;
     width: 142px;
     height: auto;
-    &__image {
-      width: 142px;
-      height: 72px;
+    &--footer {
+      position: static;
+      width: 103px;
+      height: 36px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  .logo__image {
+    width: 142px;
+    height: 72px;
+    &--footer {
+      width: 103px;
+      height: 36px;
     }
   }
 }
