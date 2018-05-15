@@ -53,6 +53,11 @@
   input[type="radio"] {
     display: none;
   }
+
+  &--name {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .form__size {
@@ -181,6 +186,17 @@
 .form__checkbox:checked:active + .form__type--checkbox::before {
   content: "";
   background: none;
+}
+
+.form__name {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.form__input-field {
+  border: 0;
+  border-bottom: 2px solid #000000;
 }
 
 @media (min-width: @tablet-width) {
