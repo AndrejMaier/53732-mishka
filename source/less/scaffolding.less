@@ -14,7 +14,7 @@ body {
   min-width: 320px;
 }
 
-h1 {
+.page-name {
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 27px;
@@ -24,4 +24,20 @@ h1 {
   margin: 0;
   text-align: center;
   background-color: #f1f1f1;
+}
+
+@media (min-width: @tablet-width) {
+  .page-name {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 96px 0 78px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-name {
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 98px;
+  }
 }
