@@ -82,7 +82,7 @@
   &--area {
     margin-bottom: 14px;
 
-    legend{
+    legend {
       margin-bottom: 25px;
     }
   }
@@ -230,7 +230,7 @@
   margin-top: 25px;
 
   &:first-of-type {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 
@@ -341,8 +341,6 @@
   }
 }
 
-
-
 @media (min-width: @tablet-width) {
   .form {
     width: 768px;
@@ -415,14 +413,30 @@
 
     &--tel {
       background-color: #f1f1f1;
-      padding-top: 40px;
-      padding-bottom: 38px;
+      padding-top: 42px;
+      padding-bottom: 0;
+
+      legend {
+        top: 67px;
+      }
     }
 
     &--email {
       background-color: #f1f1f1;
-      padding-top: 40px;
-      padding-bottom: 38px;
+      padding-top: 18px;
+      padding-bottom: 50px;
+
+      legend {
+        top: 40px;
+      }
+    }
+
+    &--area {
+      padding-top: 50px;
+
+      legend {
+        top: 67px;
+      }
     }
   }
 
@@ -453,6 +467,14 @@
       justify-content: space-between;
       align-content: center;
       align-items: center;
+    }
+
+    &--footer {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 768px;
+      margin-left: 0;
+      padding-top: 50px;
     }
   }
 
@@ -502,7 +524,7 @@
     top: 15px;
     left: 15px;
     width: 22px;
-    height: 22px; 
+    height: 22px;
   }
 
   .form__name {
@@ -533,10 +555,23 @@
   }
 
   .form__tel {
+    width: 501px;
     background-color: #f1f1f1;
+    font-size: 19px;
+    padding-top: 17px;
+    background-position: 451px 19px;
   }
 
   .form__email {
+    width: 501px;
     background-color: #f1f1f1;
+    font-size: 19px;
+    background-position: 448px 16px;
+  }
+
+  .form__area {
+    width: 501px;
+    font-size: 19px;
+    padding-top: 12px;
   }
 }

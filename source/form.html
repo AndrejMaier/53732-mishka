@@ -84,12 +84,16 @@
         </fieldset>
         <fieldset class="form__item form__item--area">
           <legend>Доп</legend>
-          <textarea class="form__area" name="description-product" cols="30" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <div class="form__wrapper">
+            <textarea class="form__area" name="description-product" cols="30" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
         </fieldset>
-        <p class="legend">
-          <sup>*</sup>Поля обязательны для заполнения
-        </p>
-        <input class="button button--send" type="submit" value="Отправить заказ">
+        <div class="form__wrapper form__wrapper--footer">
+          <p class="legend legend--form">
+            <sup>*</sup>Поля обязательны для заполнения
+          </p>
+          <input class="button button--send" type="submit" value="Отправить заказ">
+        </div>
       </form>
     </main>
     <footer class="main-footer">
