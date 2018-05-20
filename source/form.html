@@ -9,7 +9,11 @@
   <body>
     <header class="main-header">
       <a class="logo" href="index.html">
-        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>

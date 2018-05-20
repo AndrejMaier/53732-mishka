@@ -2,11 +2,25 @@
   width: 260px;
   display: flex;
   flex-direction: column;
+  position: relative;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 19px;
   padding-bottom: 30px;
   font-family: "Open Sans", "Arial", sans-serif;
+
+  &::after {
+    content: "";
+    height: 6px;
+    width: 320px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    bottom: -20px;
+    left: 0;
+  }
 
   h2 {
     font-size: 25px;
@@ -108,6 +122,20 @@
     background-repeat: no-repeat;
     background-position: top left;
 
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
+
+    &::after {
+      content: "";
+      height: 17px;
+      width: 768px;
+      position: absolute;
+      z-index: 1;
+      bottom: -75px;
+      left: 0;
+    }
+
     h2 {
       width: 450px;
       order: 1;
@@ -156,6 +184,16 @@
     padding-bottom: 67px;
     margin-left: auto;
     margin-right: auto;
+
+    &::after {
+      content: "";
+      height: 23px;
+      width: 1050px;
+      position: absolute;
+      z-index: 1;
+      bottom: -91px;
+      left: 0;
+    }
 
     h2 {
       font-size: 53px;
