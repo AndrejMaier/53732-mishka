@@ -32,7 +32,11 @@
     margin-bottom: 0;
 
     input[type="radio"] {
-      display: none;
+      opacity: 0;
+
+      &:focus + .form__size {
+        border-color: #62d1ba;
+      }
 
       &:checked + .form__size {
         border-color: #62d1ba;
@@ -53,7 +57,7 @@
   }
 
   input[type="radio"] {
-    display: none;
+    position: absolute;
   }
 
   &--checkbox {
@@ -383,6 +387,7 @@
     }
 
     &--modal {
+      display: block;
       width: 350px;
       margin-left: auto;
       margin-right: auto;
@@ -579,6 +584,10 @@
 @media (min-width: @desktop-width) {
   .form {
     width: 1200px;
+
+    &--modal {
+      width: 504px;
+    }
   }
 
   .form__text {
@@ -596,6 +605,10 @@
     legend {
       top: 29px;
       left: 140px;
+    }
+
+    &--modal {
+      width: 350px;
     }
 
     &--checkbox {
