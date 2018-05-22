@@ -8,11 +8,15 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="logo" href="index.html">
-        <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="">
+      <a class="logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="">
+        </picture>
       </a>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -71,7 +75,11 @@
               <td>15 см</td>
             </tr>
           </table>
-          <img src="img/triple-set-mobile@1x.jpg" alt="Картинка продукта" width="260" height="315"  >
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg">
+            <img src="img/triple-set-mobile@1x.jpg" alt="Картинка продукта" width="260" height="315" srcset="img/triple-set-mobile@2x.jpg" >
+          </picture>
           <p class="product-card-full__price">Цена: 990 руб.</p>
           <a href="cart.html" class="product-card-full__button button">Заказать</a>
         </div>
@@ -113,7 +121,11 @@
           </div>
         </div>
         <div class="contacts__maps">
-          <img class="contacts__map" src="img/map-mobile@1x.jpg" alt="Карта проезда">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg, img/map-desktop@2x.jpg">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg, img/map-tablet@2x.jpg">
+            <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg" alt="Карта проезда">
+          </picture>
           <span class="contacts__pin"></span>
         </div>
         <a class="button contacts__button-feedback" href="feedback.html">Напишите нам</a>
@@ -122,7 +134,9 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a class="logo logo--footer" href="index.html">
-          <img class="logo__image logo__image--footer" src="img/logo-mobile.svg" width="86" height="35" alt="">
+          <svg class="logo__image logo__image--footer" width="103" height="36">
+            <use xlink:href="img/logo-footer.svg#logo-footer"></use>
+          </svg>
         </a>
         <section class="social">
           <ul class="social__list">
@@ -154,5 +168,7 @@
         </form>
       </section>
     </section>
+    <script src="js/mobile-nav.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

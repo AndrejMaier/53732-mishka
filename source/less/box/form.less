@@ -32,7 +32,11 @@
     margin-bottom: 0;
 
     input[type="radio"] {
-      display: none;
+      opacity: 0;
+
+      &:focus + .form__size {
+        border-color: #62d1ba;
+      }
 
       &:checked + .form__size {
         border-color: #62d1ba;
@@ -53,7 +57,8 @@
   }
 
   input[type="radio"] {
-    display: none;
+    position: absolute;
+    opacity: 0;
   }
 
   &--checkbox {
@@ -207,8 +212,14 @@
   display: none;
 }
 
+.form__radio:focus + .form__type--radio::after {
+  content: "";
+  border-color: #62d1ba;
+}
+
 .form__checkbox {
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .form__checkbox:checked + .form__type--checkbox::before {
@@ -221,6 +232,10 @@
 .form__checkbox:checked:active + .form__type--checkbox::before {
   content: "";
   background: none;
+}
+
+.form__checkbox:focus + .form__type--checkbox::before {
+  border-color: #62d1ba;
 }
 
 .form__name {
@@ -282,10 +297,12 @@
 
   &:hover {
     border-color: #62d1ba;
+    background-image: url("../img/icon-phone-hover-focus.svg");
   }
 
   &:focus {
     border-color: #62d1ba;
+    background-image: url("../img/icon-phone-hover-focus.svg");
   }
 }
 
@@ -311,10 +328,12 @@
 
   &:hover {
     border-color: #62d1ba;
+    background-image: url("../img/icon-mail-hover-focus.svg");
   }
 
   &:focus {
     border-color: #62d1ba;
+    background-image: url("../img/icon-mail-hover-focus.svg");
   }
 }
 
@@ -383,6 +402,7 @@
     }
 
     &--modal {
+      display: block;
       width: 350px;
       margin-left: auto;
       margin-right: auto;
@@ -579,6 +599,10 @@
 @media (min-width: @desktop-width) {
   .form {
     width: 1200px;
+
+    &--modal {
+      width: 504px;
+    }
   }
 
   .form__text {
@@ -596,6 +620,10 @@
     legend {
       top: 29px;
       left: 140px;
+    }
+
+    &--modal {
+      width: 350px;
     }
 
     &--checkbox {

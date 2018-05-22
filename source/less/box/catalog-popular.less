@@ -26,6 +26,11 @@
   background-position: 50% 19%;
   text-align: center;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 180%;
+  }
+
   h3 {
     position: absolute;
     width: 260px;
@@ -60,6 +65,10 @@
     padding-left: 30px;
     padding-top: 27px;
     padding-bottom: 27px;
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &--interior-item {
@@ -67,6 +76,14 @@
     background-image: url("../img/icon-interior.svg");
     background-repeat: no-repeat;
     background-position: 88% center;
+
+    &:hover {
+      background-image: url("../img/icon-interior-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/icon-interior-active.svg");
+    }
   }
 
   &--child-toy {
@@ -74,6 +91,14 @@
     background-image: url("../img/icon-toy.svg");
     background-repeat: no-repeat;
     background-position: 90% center;
+
+    &:hover {
+      background-image: url("../img/icon-toy-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../img/icon-toy-active.svg");
+    }
   }
 }
 
@@ -81,6 +106,18 @@
   .catalog-popular {
     width: 768px;
     position: relative;
+
+    &::after {
+      content: "";
+      height: 11px;
+      width: 768px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+    }
   }
 
   .catalog-popular__delivery {
@@ -98,12 +135,16 @@
     justify-content: center;
     width: 768px;
     height: 745px;
-    background-image: url("../img/hero-mobile@1x.jpg");
+    background-image: url("../img/hero-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 19%;
     text-align: center;
     z-index: -1;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
 
     h3 {
       top: 81px;
@@ -138,15 +179,21 @@
 
 @media (min-width: @desktop-width) {
   .catalog-popular {
-    width: 1250px;
+    width: 1200px;
     position: relative;
+
+    &::after {
+      content: "";
+      width: 1200px;
+      height: 14px;
+    }
   }
 
   .catalog-popular__delivery {
     position: absolute;
     display: block;
     max-width: 265px;
-    right: 100px;
+    right: 75px;
     top: 0;
     z-index: 2;
   }
@@ -156,7 +203,7 @@
     position: absolute;
     z-index: 2;
     top: 0;
-    left: 100px;
+    left: 75px;
     padding-top: 18px;
     padding-bottom: 18px;
     font-size: 15px;
@@ -164,6 +211,14 @@
     text-decoration: none;
     color: #000000;
     font-weight: bold;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   .catalog-popular__sale {
@@ -171,7 +226,7 @@
     position: absolute;
     z-index: 2;
     top: 0;
-    left: 320px;
+    left: 295px;
     padding-top: 18px;
     padding-bottom: 18px;
     font-size: 15px;
@@ -179,11 +234,24 @@
     text-decoration: none;
     color: #000000;
     font-weight: bold;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   .catalog-popular__promo {
-    width: 1250px;
+    width: 1200px;
+    background-image: url("../img/hero-desktop@1x.jpg");
     background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
 
     h3 {
       width: 700px;
