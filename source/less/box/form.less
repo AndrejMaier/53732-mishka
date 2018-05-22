@@ -58,6 +58,7 @@
 
   input[type="radio"] {
     position: absolute;
+    opacity: 0;
   }
 
   &--checkbox {
@@ -211,8 +212,14 @@
   display: none;
 }
 
+.form__radio:focus + .form__type--radio::after {
+  content: "";
+  border-color: #62d1ba;
+}
+
 .form__checkbox {
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .form__checkbox:checked + .form__type--checkbox::before {
@@ -225,6 +232,10 @@
 .form__checkbox:checked:active + .form__type--checkbox::before {
   content: "";
   background: none;
+}
+
+.form__checkbox:focus + .form__type--checkbox::before {
+  border-color: #62d1ba;
 }
 
 .form__name {
@@ -286,10 +297,12 @@
 
   &:hover {
     border-color: #62d1ba;
+    background-image: url(../img/icon-phone-hover-focus.svg);
   }
 
   &:focus {
     border-color: #62d1ba;
+    background-image: url(../img/icon-phone-hover-focus.svg);
   }
 }
 
@@ -315,10 +328,12 @@
 
   &:hover {
     border-color: #62d1ba;
+    background-image: url("../img/icon-mail-hover-focus.svg");
   }
 
   &:focus {
     border-color: #62d1ba;
+    background-image: url("../img/icon-mail-hover-focus.svg");
   }
 }
 

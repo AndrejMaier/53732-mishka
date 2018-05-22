@@ -9,5 +9,5 @@ popularCardOrder.addEventListener('click', function (evt) {
 
 card.addEventListener('click', function (evt) {
   evt.preventDefault();
-  popup.classList('modal--active')
-})
+  popup.classList('modal--active');
+});
