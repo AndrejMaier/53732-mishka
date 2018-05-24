@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
     <header class="main-header">
       <a class="logo logo--header" href="index.html">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="">
         </picture>
       </a>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="nav-button" type="button">Открыть меню</button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -27,7 +27,7 @@
             </li>
             <li class="main-nav__item main-nav__item--search">
               <form action="https://echo.htmlacademy.ru" method="get">
-                <a href="search.html" class="main-nav__search-field main-nav__search-field--link"></a>
+                <a href="search.html" class="main-nav__search-field main-nav__search-field--link" title="Поиск по сайту"></a>
                 <input class="main-nav__search-field" type="search" name="search" placeholder="Поиск по сайту">
               </form>
             </li>
@@ -88,19 +88,25 @@
           <fieldset class="form__item form__item--tel">
             <legend>Тел</legend>
             <div class="form__wrapper">
-              <input class="form__tel" type="tel" name="phone-number" placeholder="+7 XXX XX XX*">
+              <lebel>
+                <input class="form__tel" type="tel" name="phone-number" placeholder="+7 XXX XX XX*">
+              </lebel>
             </div>
           </fieldset>
           <fieldset class="form__item form__item--email">
             <legend>E-mail</legend>
             <div class="form__wrapper">
-              <input class="form__email" type="email" name="email-user" placeholder="Ваш Email*">
+              <lebel>
+                <input class="form__email" type="email" name="email-user" placeholder="Ваш Email*">
+              </lebel>
             </div>
           </fieldset>
           <fieldset class="form__item form__item--area">
             <legend>Доп</legend>
             <div class="form__wrapper form__wrapper--area">
-              <textarea class="form__area" name="description-product" cols="30" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <lebel>
+                <textarea class="form__area" name="description-product" cols="30" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </lebel>
             </div>
           </fieldset>
           <div class="form__wrapper form__wrapper--footer">

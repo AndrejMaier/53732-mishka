@@ -6,9 +6,19 @@
 
   &--form {
     order: 2;
-    margin-right: 50px;
-    font-size: 17px;
-    line-height: 30px;
+    width: 260;
+    margin-top: -2px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .legend {
+    &--form {
+      font-size: 17px;
+      line-height: 30px;
+      margin-top: 8px;
+      margin-right: 50px;
+    }
   }
 }
 
@@ -16,7 +26,9 @@
   .legend {
     &--form {
       margin-right: 0;
-      margin-top: 7px;
+      margin-top: 0;
+      font-size: 17px;
+      line-height: 30px;
     }
   }
 }

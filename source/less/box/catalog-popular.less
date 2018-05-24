@@ -44,6 +44,11 @@
   }
 }
 
+.catalog-popular__span {
+  padding-left: 25px;
+  padding-right: 20px;
+}
+
 .catalog-popular__list {
   margin: 0;
   padding: 0;
@@ -156,6 +161,10 @@
     }
   }
 
+  .catalog-popular__span {
+    padding: 0;
+  }
+
   .catalog-popular__list {
     position: relative;
     z-index: 2;
@@ -172,8 +181,13 @@
 
     a {
       padding-bottom: 32px;
+      padding-left: 35px;
       font-size: 20px;
       line-height: 30px;
+    }
+
+    &--child-toy {
+      background-position: 88% center;
     }
   }
 }
@@ -190,7 +204,7 @@
   }
 
   .catalog-popular__promo {
-    width: 1200px;
+    width: 1150px;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-size: cover;
 
@@ -208,7 +222,6 @@
 
   .catalog-popular__list {
     width: 1050px;
-    align-items: flex-start;
   }
 
   .catalog-popular__item {

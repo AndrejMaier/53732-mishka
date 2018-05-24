@@ -30,13 +30,13 @@
   }
 }
 
-.product-process__player {
+.production-process__player {
   position: relative;
   width: 260px;
   height: 150px;
 }
 
-.product-process__button-play {
+.production-process__button-play {
   width: 101px;
   height: 77px;
   position: absolute;
@@ -46,7 +46,7 @@
   background-repeat: no-repeat;
 }
 
-.product-process__video {
+.production-process__video {
   width: 260px;
   height: 150px;
   background-color: #fbfbfb;
@@ -58,16 +58,16 @@
   }
 }
 
-.product-process__description {
+.production-process__description {
   border: 1px solid #ececec;
   border-top: 0;
   padding-left: 33px;
   padding-right: 33px;
-  padding-top: 32px;
+  padding-top: 27px;
   padding-bottom: 32px;
 }
 
-.product-process__text {
+.production-process__text {
   font-size: 13px;
   line-height: 24px;
   margin-top: 0;
@@ -100,12 +100,12 @@
     }
   }
 
-  .product-process__player {
+  .production-process__player {
     width: 668px;
     height: 455px;
   }
 
-  .product-process__video {
+  .production-process__video {
     width: 668px;
     height: 455px;
     background-image: url("../img/video-tablet@1x.jpg");
@@ -116,19 +116,19 @@
     }
   }
 
-  .product-process__button-play {
+  .production-process__button-play {
     top: 191px;
     left: 284px;
   }
 
-  .product-process__description {
+  .production-process__description {
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 0;
     padding-bottom: 45px;
   }
 
-  .product-process__text {
+  .production-process__text {
     font-size: 15px;
     line-height: 30px;
     margin-bottom: 34px;
@@ -138,19 +138,19 @@
 @media (min-width: @desktop-width) {
   .production-process {
     width: 1050px;
-    margin-left: 75px;
-    margin-right: 75px;
-    margin-top: 58px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0;
     margin-bottom: 105px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    &:hover .product-process__description {
+    &:hover .production-process__description {
       box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
     }
 
-    &:active .product-process__description {
+    &:active .production-process__description {
       box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
     }
   }
@@ -161,11 +161,11 @@
     background-position: 0 40px;
   }
 
-  .product-process__player {
+  .production-process__player {
     width: 682px;
   }
 
-  .product-process__video {
+  .production-process__video {
     width: 682px;
     background-image: url("../img/video-desktop@1x.jpg");
 
@@ -174,7 +174,7 @@
     }
   }
 
-  .product-process__button-play {
+  .production-process__button-play {
     left: 291px;
 
     &:hover {
@@ -194,9 +194,10 @@
     }
   }
 
-  .product-process__description {
+  .production-process__description {
     display: flex;
     flex-direction: column;
+    width: 230px;
     padding-left: 80px;
     padding-right: 57px;
     padding-bottom: 60px;
@@ -204,7 +205,7 @@
     border-top: 1px solid #ececec;
   }
 
-  .product-process__text {
+  .production-process__text {
     margin-bottom: auto;
   }
 }

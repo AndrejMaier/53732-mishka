@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
     <header class="main-header">
       <a class="logo">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35" alt="">
         </picture>
       </a>
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="nav-button" type="button">Открыть меню</button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -27,7 +27,7 @@
             </li>
             <li class="main-nav__item main-nav__item--search">
               <form action="https://echo.htmlacademy.ru" method="get">
-                <a href="search.html" class="main-nav__search-field main-nav__search-field--link"></a>
+                <a href="search.html" class="main-nav__search-field main-nav__search-field--link" title="Поиск по сайту"></a>
                 <input class="main-nav__search-field" type="search" name="search" placeholder="Поиск по сайту">
               </form>
             </li>
@@ -51,7 +51,7 @@
         <div class="main-content">
         <!--<h2>Популярные категории товаров</h2>-->
         <div class="catalog-popular__promo">
-          <h3>Милые штуки ручной работы для дома</h3>
+          <h3>Милые штуки <span class="catalog-popular__span">ручной</span> работы для дома</h3>
         </div>
         <ul class="catalog-popular__list">
           <li class="catalog-popular__item catalog-popular__item--interior-item">
@@ -128,12 +128,7 @@
           </div>
         </div>
         <div class="contacts__maps">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта проезда">
-          </picture>
-          <span class="contacts__pin"></span>
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942417752!2d30.320889251553492!3d59.93879686895909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sde!4v1527156723025" width="auto" height="auto" allowfullscreen></iframe>
         </div>
         <a class="button contacts__button-feedback" href="feedback.html">Напишите нам</a>
       </section>
