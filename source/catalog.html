@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
@@ -50,6 +54,9 @@
             <article class="product-cards__item">
               <a class="product-cards__product-image" href="#">
                 <picture>
+                 <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@.2x.webp 2x">
+                 <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                 <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
                   <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@.2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
                   <img  src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" srcset="img/photo-hare-mobile@2x.jpg 2x">
@@ -64,6 +71,9 @@
             <article class="product-cards__item">
               <a class="product-cards__product-image" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
                   <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
                   <img src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" srcset="img/photo-bown-mobile@2x.jpg 2x">
@@ -78,7 +88,10 @@
             <article class="product-cards__item">
               <a class="product-cards__product-image" href="#">
                 <picture>
-                  <source media="(min-width: 1050px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
+                  <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
                   <img src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" srcset="img/photo-toys-mobile@2x.jpg 2x">
                 </picture>
@@ -112,7 +125,7 @@
       <div class="main-footer__wrapper">
         <a class="logo logo--footer" href="index.html">
           <svg class="logo__image logo__image--footer" width="103" height="36">
-            <use xlink:href="img/logo-footer.svg#logo-footer"></use>
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
         <section class="social">
@@ -146,7 +159,7 @@
         </form>
       </section>
     </section>
-    <script src="js/mobile-nav.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="js/mobile-nav.min.js"></script>
+    <script src="js/modal.min.js"></script>
   </body>
 </html>

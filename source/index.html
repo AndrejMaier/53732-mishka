@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
@@ -83,6 +87,9 @@
             </tr>
           </table>
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
             <img src="img/triple-set-mobile@1x.jpg" alt="Картинка продукта" width="260" height="315" srcset="img/triple-set-mobile@2x.jpg 2x" >
@@ -137,7 +144,7 @@
       <div class="main-footer__wrapper">
         <a class="logo logo--footer" href="index.html">
           <svg class="logo__image logo__image--footer" width="103" height="36">
-            <use xlink:href="img/logo-footer.svg#logo-footer"></use>
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
         <section class="social">
